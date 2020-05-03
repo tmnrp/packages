@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.range-slider-container {
+  display: inline-flex;
+}
+
+.range-slider-container.legend-top {
+  flex-direction: column-reverse;
+}
+
+.range-slider-container.legend-right {
+  flex-direction: row;
+}
+
+.range-slider-container.legend-bottom {
+  flex-direction: column;
+}
+
+.range-slider-container.legend-left {
+  flex-direction: row-reverse;
+}
+
+.min-wrap,
+.max-wrap {
+  margin: 5px;
+}
+
+.range-slider-wrap {
+  display: flex;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.range-slider-wrap.vbox .range-slider {
+  -webkit-appearance: slider-vertical;
+}
+
+.range-slider-wrap.hbox {
+  flex-direction: row;
+}
+.range-slider-wrap.vbox {
+  flex-direction: column-reverse;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcoral;
+}
+
+.legend.start {
+  justify-content: flex-start;
+}
+
+.legend.end {
+  justify-content: flex-end;
+}
+
+.range-slider::-webkit-slider-thumb,
+.range-slider::-moz-range-thumb {
+  cursor: pointer;
+}
+
+.range-slider:hover {
+  opacity: 1;
+}
+
+.custom-range-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.range-slider-value {
+  position: absolute;
+  font-size: smaller;
+}
+
+.range-slider.square,
+.range-slider.circle,
+.range-slider.virus {
+  -webkit-appearance: none !important;
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  opacity: 0.8;
+  background: linear-gradient(
+    to right,
+    #82cfd0 0%,
+    #82cfd0 50%,
+    #fff 50%,
+    #fff 100%
+  );
+
+  border: solid 1px #82cfd0;
+  outline: none;
+  transition: background 450ms ease-in;
+}
+
+/*----------------------------------*/
+.range-slider.virus {
+  background-color: rgb(151, 223, 219);
+}
+
+.range-slider.virus::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: url("./virus-icon.png");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  cursor: pointer;
+}
+
+/*----------------------------------*/
+.range-slider.circle {
+  background-color: rgb(243, 174, 174);
+}
+
+.range-slider.circle::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+}
+
+/*----------------------------------*/
+.range-slider.square .react-rangeslider {
+  background-color: lightgrey;
+}
+
+.range-slider.square::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}

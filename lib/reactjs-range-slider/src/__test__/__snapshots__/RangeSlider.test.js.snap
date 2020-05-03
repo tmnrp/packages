@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Legend container Empty param 1`] = `
+<span
+  class="legend"
+  data-testid="legend-testid"
+>
+   
+</span>
+`;
+
+exports[`Legend container Invalid param 1`] = `
+<span
+  class="legend"
+  data-testid="legend-testid"
+>
+   
+</span>
+`;
+
+exports[`Legend container Valid parameters should return valid element 1`] = `
+<span
+  class="legend start"
+  data-testid="legend-testid"
+  style="background-color: red;"
+>
+  label 75
+</span>
+`;
+
+exports[`Slider rendering Slider renders 1`] = `
+<span
+  class="range-slider-container legend-top"
+  data-testid="range-slider-container-testid"
+>
+  <span
+    class="range-slider-wrap undefined"
+  >
+    <span
+      class="min-wrap"
+    >
+      0
+    </span>
+    <span
+      class="custom-range-slider"
+    >
+      <input
+        class="range-slider square"
+        id="rangeslider"
+        max="100"
+        min="0"
+        name="rangeslider"
+        step="1"
+        type="range"
+        value="50"
+      />
+    </span>
+    <span
+      class="max-wrap"
+    >
+      100
+    </span>
+  </span>
+  <span
+    class="legend end"
+    data-testid="legend-testid"
+  >
+    Range:  50
+  </span>
+</span>
+`;
+
+exports[`Valid integer test Valid integer value renders 1`] = `
+<input
+  class="range-slider"
+  id="rangeslider"
+  max="90"
+  min="10"
+  name="rangeslider"
+  step="2"
+  type="range"
+  value="75"
+/>
+`;
+
+exports[`Valid integer test Valid integer value renders 2`] = `
+<input
+  class="range-slider"
+  id="rangeslider"
+  max="100"
+  min="0"
+  name="rangeslider"
+  step="1"
+  type="range"
+  value="0"
+/>
+`;
+
+exports[`legend on slider renders 1`] = `
+<React.Fragment>
+  <span
+    className="range-slider-thumb"
+  />
+  <span
+    className="range-slider-value"
+  >
+    50
+  </span>
+</React.Fragment>
+`;

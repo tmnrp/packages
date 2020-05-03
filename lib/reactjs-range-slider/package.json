@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "test": "jest"
   },
-  "repository": "https://github.com/tmnrp/packages/tree/master/reactjs-range-slider",
+  "repository": "https://github.com/tmnrp/packages/tree/master/lib/reactjs-range-slider",
   "keywords": [],
   "author": "Parammal Harsh (tmnrp)",
   "license": "MIT",
@@ -18,7 +18,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/tmnrp/packages/tree/master/reactjs-range-slider#readme",
+  "homepage": "https://github.com/tmnrp/packages/tree/master/lib/reactjs-range-slider#readme",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",

@@ -50,6 +50,7 @@ const getNavbar = () => {
       bgColor="#121212"
       fontColor="white"
       height="70px"
+      themeMode="dark"
     />
   );
 };

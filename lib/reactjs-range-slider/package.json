@@ -4,7 +4,6 @@
   "description": "Configurable Reactjs Range Slider",
   "main": "build/index.js",
   "scripts": {
-    "start": "webpack --watch",
     "build": "webpack --mode production",
     "test": "jest"
   },

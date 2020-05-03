@@ -8,21 +8,49 @@ const App = () => {
       <div data-testid="myid">Hello World</div>
 
       <h3>Navbar</h3>
-      <Navbar />
+      {getNavbar()}
 
       <h3>Range Slider Example</h3>
-      <RangeSlider
-        value={50}
-        min={0}
-        max={100}
-        step={1}
-        sliderThumbShape="square"
-        legend={true}
-        legendLabel="Range: "
-        legendPosition="top"
-        legendAlignment="end"
-      />
+      {getRangeSlider()}
     </div>
+  );
+};
+
+const getRangeSlider = () => {
+  return (
+    <RangeSlider
+      value={50}
+      min={0}
+      max={100}
+      step={1}
+      sliderThumbShape="square"
+      legend={true}
+      legendLabel="Range: "
+      legendPosition="top"
+      legendAlignment="end"
+    />
+  );
+};
+
+const getNavbar = () => {
+  const navItems = [
+    {
+      text: "Home"
+    },
+    {
+      text: "About"
+    },
+    {
+      text: "Contact"
+    }
+  ];
+  return (
+    <Navbar
+      navItems={navItems}
+      bgColor="#121212"
+      fontColor="white"
+      height="70px"
+    />
   );
 };
 

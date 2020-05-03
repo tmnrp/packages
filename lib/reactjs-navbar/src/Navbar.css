@@ -1,3 +1,41 @@
-.component {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.nav-logo {
+  letter-spacing: 1px;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  list-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-item:hover {
+  filter: brightness(90%);
+}
+
+.nav-item a {
+  text-decoration: none;
 }

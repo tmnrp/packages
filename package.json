@@ -6,16 +6,18 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": "https://github.com/tmnrp/packages.git",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Parammal Harsh Harish aka TMRNP <tony.venom007@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tmnrp/packages/issues"
   },
-  "homepage": "https://github.com/tmnrp/packages#readme",
+  "homepage": "https://tmnrp.github.io/packages/",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
@@ -25,6 +27,7 @@
     "@types/jest": "^25.2.1",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
+    "gh-pages": "^2.2.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^25.5.4",
@@ -42,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "@tmnrp/reactjs-range-slider": "0.0.1",
+    "@tmnrp/reactjs-range-slider": "0.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },

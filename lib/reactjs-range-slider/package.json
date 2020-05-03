@@ -1,6 +1,6 @@
 {
   "name": "@tmnrp/reactjs-range-slider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Configurable Reactjs Range Slider",
   "main": "build/index.js",
   "scripts": {

@@ -5,6 +5,7 @@ const App = () => {
   return (
     <div>
       <div data-testid="myid">Hello World</div>
+      <h3>Range Slider Example</h3>
       <RangeSlider
         value={50}
         min={0}

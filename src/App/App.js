@@ -6,18 +6,17 @@ const App = () => {
   const onNavBurgerClick = (e) => {
     console.log(e.currentTarget);
   };
-  return (
-    <div>
-      {getNavbar()}
-      <h3>Navbar</h3>
+  return <div>{getNavbar()}</div>;
+};
+
+/*
+<h3>Navbar</h3>
 
       <div data-testid="myid">Hello World</div>
 
       <h3>Range Slider Example</h3>
       {getRangeSlider()}
-    </div>
-  );
-};
+*/
 
 const getRangeSlider = () => {
   return (

@@ -3,12 +3,15 @@ import RangeSlider from "@tmnrp/reactjs-range-slider";
 import Navbar from "@tmnrp/reactjs-navbar";
 
 const App = () => {
+  const onNavBurgerClick = (e) => {
+    console.log(e.currentTarget);
+  };
   return (
     <div>
-      <div data-testid="myid">Hello World</div>
-
-      <h3>Navbar</h3>
       {getNavbar()}
+      <h3>Navbar</h3>
+
+      <div data-testid="myid">Hello World</div>
 
       <h3>Range Slider Example</h3>
       {getRangeSlider()}
@@ -32,7 +35,7 @@ const getRangeSlider = () => {
   );
 };
 
-const getNavbar = () => {
+const getNavbar = (onNavBurgerClick) => {
   const navItems = [
     {
       text: "Home"
@@ -51,6 +54,7 @@ const getNavbar = () => {
       fontColor="white"
       height="70px"
       themeMode="dark"
+      onNavBurgerClick={onNavBurgerClick}
     />
   );
 };

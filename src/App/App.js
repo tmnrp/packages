@@ -3,10 +3,15 @@ import RangeSlider from "@tmnrp/reactjs-range-slider";
 import Navbar from "@tmnrp/reactjs-navbar";
 
 const App = () => {
-  const onNavBurgerClick = (e) => {
-    console.log(e.currentTarget);
-  };
-  return <div>{getNavbar()}</div>;
+  return (
+    <div>
+      {getNavbar()}
+      <div>
+        <h3>Range Slider Example</h3>
+        {getRangeSlider()}
+      </div>
+    </div>
+  );
 };
 
 /*
@@ -14,8 +19,7 @@ const App = () => {
 
       <div data-testid="myid">Hello World</div>
 
-      <h3>Range Slider Example</h3>
-      {getRangeSlider()}
+      
 */
 
 const getRangeSlider = () => {
@@ -34,7 +38,7 @@ const getRangeSlider = () => {
   );
 };
 
-const getNavbar = (onNavBurgerClick) => {
+const getNavbar = () => {
   const navItems = [
     {
       text: "Home"
@@ -44,6 +48,9 @@ const getNavbar = (onNavBurgerClick) => {
     },
     {
       text: "Contact"
+    },
+    {
+      text: "Career"
     }
   ];
   return (
@@ -52,10 +59,14 @@ const getNavbar = (onNavBurgerClick) => {
       bgColor="#121212"
       fontColor="white"
       height="70px"
-      themeMode="dark"
-      onNavBurgerClick={onNavBurgerClick}
+      isLight={true}
+      themeCallback={themeModeCallback}
     />
   );
+};
+
+const themeModeCallback = (mode) => {
+  console.log("current mode", mode);
 };
 
 export default App;

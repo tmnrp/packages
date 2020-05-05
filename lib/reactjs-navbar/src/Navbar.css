@@ -27,7 +27,8 @@
   letter-spacing: 5px;
   font-weight: bold;
   overflow: hidden;
-  height: 60%;
+  height: 100%;
+  z-index: 1;
 }
 
 /* ------------- nav item -------------- */
@@ -66,7 +67,7 @@
 
 /* ------------- Theme Mode -------------- */
 .theme-mode-icon {
-  font-size: xx-large;
+  font-size: xxx-large;
   transition: all ease-in-out;
 }
 
@@ -101,7 +102,8 @@
     top: 70px;
     right: 0px;
     width: 0%;
-    transition: all 0.5s ease-in-out;
+    height: 60%;
+    transition: all 0.25s ease-in-out;
   }
 
   .nav-items.is-active {

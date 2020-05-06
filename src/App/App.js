@@ -40,6 +40,7 @@ const getNavbar = (history) => {
       height="70px"
       isLight={true}
       themeCallback={themeModeCallback}
+      breakpoint={742}
       onPageClickCallback={(e, page) => onPageClickCallback(e, page, history)}
     />
   );

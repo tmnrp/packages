@@ -45,22 +45,22 @@
 
 .nav-item a {
   text-decoration: none;
-  margin-top: auto;
+  transition: all ease-in-out 0.5s;
 }
 
 .nav-item span {
   height: 2px;
   width: 100%;
-  background-color: white;
-  margin-top: auto;
   animation-name: "default";
   opacity: 0;
-  transition: all ease-in-out 0.5s;
   position: relative;
   left: -100px;
+  top: 10px;
+  transition: all ease-in-out 0.5s;
 }
 
-.nav-item:hover span {
+.nav-item:hover span,
+.nav-item.is-active span {
   opacity: 1;
   left: 0px;
 }
@@ -102,7 +102,7 @@
     top: 70px;
     right: 0px;
     width: 0%;
-    height: 60%;
+    height: 70%;
     transition: all 0.25s ease-in-out;
   }
 

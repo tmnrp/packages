@@ -34,8 +34,9 @@ const getNavbar = (history) => {
   return (
     <Navbar
       pageDetails={pageDetails}
-      bgColor="#121212"
+      bgColor="#374046"
       fontColor="white"
+      primaryColor="#F34236"
       height="70px"
       isLight={true}
       themeCallback={themeModeCallback}
@@ -45,6 +46,7 @@ const getNavbar = (history) => {
 };
 
 const onPageClickCallback = (e, page, history) => {
+  console.log("Page: ", page);
   history.push(`/packages/${page}`);
 };
 

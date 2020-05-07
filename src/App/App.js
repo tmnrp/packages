@@ -2,6 +2,7 @@ import React from "react";
 import RangeSlider from "@tmnrp/reactjs-range-slider";
 import Navbar from "@tmnrp/reactjs-navbar";
 import { useHistory } from "react-router-dom";
+import { MdHome, MdContacts, MdWork, MdGroup } from "react-icons/md";
 
 const App = () => {
   const history = useHistory();
@@ -17,22 +18,28 @@ const App = () => {
 };
 
 const getNavbar = (history) => {
+  const logo = "Mumbai Dev";
   const pageDetails = [
     {
-      text: "Home"
+      text: "Home",
+      icon: <MdHome />
     },
     {
-      text: "About"
+      text: "About",
+      icon: <MdGroup />
     },
     {
-      text: "Contact"
+      text: "Contact",
+      icon: <MdContacts />
     },
     {
-      text: "Career"
+      text: "Career",
+      icon: <MdWork />
     }
   ];
   return (
     <Navbar
+      logo={logo}
       pageDetails={pageDetails}
       bgColor="#374046"
       fontColor="white"

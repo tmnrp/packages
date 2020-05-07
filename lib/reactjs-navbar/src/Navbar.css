@@ -65,11 +65,29 @@ a {
   filter: brightness(0.9);
 }
 
-.tm-nav-item a {
+.tm-nav-item-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tm-nav-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tm-nav-item-icon svg {
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.tm-nav-item .tm-nav-item-wrap a {
   transition: all ease-in-out 0.5s;
 }
 
-.tm-nav-item div {
+.tm-nav-item .tm-nav-item-underline {
   height: 2px;
   width: 100%;
   animation-name: "default";
@@ -80,8 +98,8 @@ a {
   transition: all ease-in-out 0.5s;
 }
 
-.tm-nav-item.is-active div,
-.tm-nav-item:hover div {
+.tm-nav-item.is-active .tm-nav-item-underline,
+.tm-nav-item:hover .tm-nav-item-underline {
   opacity: 1;
   left: 0px;
 }

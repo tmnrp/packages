@@ -76,6 +76,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all ease-in-out 0.5s;
 }
 
 .tm-nav-item-icon svg {

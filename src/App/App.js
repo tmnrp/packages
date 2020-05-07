@@ -41,11 +41,20 @@ const getNavbar = (history) => {
     <Navbar
       logo={logo}
       pageDetails={pageDetails}
-      bgColor="#374046"
-      fontColor="white"
-      primaryColor="#F34236"
-      height="70px"
       isLight={true}
+      theme={{
+        dark: {
+          bgColor: "#374046",
+          fontColor: "white",
+          primaryColor: "#F34236"
+        },
+        light: {
+          bgColor: "white",
+          fontColor: "black",
+          primaryColor: "#F34236"
+        }
+      }}
+      height="70px"
       themeCallback={themeModeCallback}
       breakpoint={742}
       onPageClickCallback={(e, page) => onPageClickCallback(e, page, history)}

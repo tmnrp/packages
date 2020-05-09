@@ -1,0 +1,6 @@
+/*------ Theme mode -----------------------------*/
+.tm-theme-mode {
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+}

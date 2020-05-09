@@ -7,7 +7,7 @@
 - Renders responsive navigationbar.
 - Dynamic menu items.
 - Configurable media query breakpoint to manage the menu length.
-- Light Dark mode indicator.
+- Functional Light/Dark mode indicator.
 
 ### Examples [link](https://tmnrp.github.io/packages/)
 

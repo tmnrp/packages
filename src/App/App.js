@@ -21,19 +21,19 @@ const getNavbar = (history) => {
   const logo = "Mumbai Dev";
   const pageDetails = [
     {
-      text: "Home",
+      name: "Home",
       icon: <MdHome />
     },
     {
-      text: "About",
+      name: "About",
       icon: <MdGroup />
     },
     {
-      text: "Contact",
+      name: "Contact",
       icon: <MdContacts />
     },
     {
-      text: "Career",
+      name: "Career",
       icon: <MdWork />
     }
   ];
@@ -41,17 +41,16 @@ const getNavbar = (history) => {
     <Navbar
       logo={logo}
       pageDetails={pageDetails}
-      isLight={true}
       theme={{
+        isLight: true,
+        primaryColor: "red",
         dark: {
           bgColor: "#374046",
-          fontColor: "white",
-          primaryColor: "#F34236"
+          fontColor: "white"
         },
         light: {
           bgColor: "white",
-          fontColor: "black",
-          primaryColor: "#F34236"
+          fontColor: "#374046"
         }
       }}
       height="70px"

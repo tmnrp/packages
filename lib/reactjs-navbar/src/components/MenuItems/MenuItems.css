@@ -1,0 +1,27 @@
+.tm-nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.tm-nav-items li {
+  cursor: pointer;
+  list-style: none;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.tm-nav-items li:hover {
+  filter: brightness(0.9);
+}
+
+.tm-nav-items li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}

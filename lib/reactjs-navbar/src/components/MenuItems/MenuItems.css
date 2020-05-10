@@ -9,10 +9,24 @@
   flex-grow: 1;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
   transition: background-color 0.5s ease-in-out;
+}
+
+.tm-nav-items li:after {
+  content: "";
+  width: 5%;
+  border-bottom: 2px solid;
+  transition: 0.5s;
+  display: block;
+  position: relative;
+}
+
+.tm-nav-items li:hover:after {
+  width: 80%;
 }
 
 .tm-nav-items li:hover {

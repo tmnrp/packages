@@ -18,10 +18,8 @@
 }
 
 #tm-nav.default .tm-nav-items-container {
-  position: absolute;
   top: 70px;
   right: 0;
-  width: 70%;
   justify-content: center;
   overflow: hidden;
 

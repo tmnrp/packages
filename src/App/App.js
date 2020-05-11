@@ -43,7 +43,7 @@ const getNavbar = (history) => {
       pageDetails={pageDetails}
       theme={{
         isLight: true,
-        primaryColor: "red",
+        primaryColor: "#f44336",
         dark: {
           bgColor: "#374046",
           fontColor: "white"
@@ -63,7 +63,7 @@ const getNavbar = (history) => {
 
 const onPageClickCallback = (e, page, history) => {
   console.log("Page: ", page);
-  history.push(`/packages/${page}`);
+  history.push(`/packages/${page.name.toLowerCase()}`);
 };
 
 const themeModeCallback = (isLight) => {

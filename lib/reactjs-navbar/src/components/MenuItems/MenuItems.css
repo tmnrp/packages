@@ -28,8 +28,14 @@
 .tm-nav-items li:hover:after {
   width: 80%;
 }
+.tm-nav-items li.is-active:after {
+  width: 80%;
+}
 
 .tm-nav-items li:hover {
+  filter: brightness(0.9);
+}
+.tm-nav-items li.is-active {
   filter: brightness(0.9);
 }
 
